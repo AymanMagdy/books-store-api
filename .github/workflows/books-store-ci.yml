@@ -31,5 +31,8 @@ jobs:
     - name: Build Docker image
       run: docker build -t go-docker-app .
      
-    - name: Run docker swarm
-      run: docker swarm up -d
+    - name: Build docker compose
+      run: docker-compose build
+     
+    - name: Run docker compose
+      run: docker-compose up -d

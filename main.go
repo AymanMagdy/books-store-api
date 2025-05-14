@@ -41,6 +41,7 @@ func createTable () bool {
 	}
 	
 	db.Close()
+	log.Println("Created the books table.")
 	return true
 
 }
