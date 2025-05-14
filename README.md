@@ -99,9 +99,3 @@ else
   echo "failed. HTTP status: $response"
 fi
 ```
-
----
-
-## 📄 License
-
-MIT License © 2025 [Your Name](https://github.com/yourusername)
