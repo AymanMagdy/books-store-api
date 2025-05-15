@@ -1,4 +1,4 @@
-package main
+package bookservice
 
 import (
 	"net/http"
@@ -17,7 +17,7 @@ func TestGETAllBooksRequest_GET(t *testing.T) {
 	rr := httptest.NewRecorder()
 
 	router := mux.NewRouter()
-	router.HandleFunc("/books", getAllBooksHandler)
+	router.HandleFunc("/books", GetAllBooksHandler)
 	router.ServeHTTP(rr, req)
 
 	if status := rr.Code; status != http.StatusOK {
